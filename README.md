@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-Websute Link:https://react-portfoliotk.netlify.app/
+Website Link:https://react-portfoliotk.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
