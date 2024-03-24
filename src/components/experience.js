@@ -13,6 +13,12 @@ const experiences = [{
         duration: "June 2023 - July 2023",
         description: "During the internship I have learnt about opencv, image processing techniques, deep learning models for object detection, pytesseract for OCR with which I have done traffic signal board detection using yolov3 object detection model.",
     },
+    {
+        title: "Software Engineering Intern",
+        company: "Bosch Global Software Technologies Private Limited",
+        duration: "Feb 2023 - present",
+        description: " Working as software developer in vehcile communication diagonstics team",
+    }
 ];
 
 const Experience = () => {
