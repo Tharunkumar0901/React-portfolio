@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const projects = [{
+        title: "Integrated Intelligent Traffic sign analysis system",
+        description: "A real time traffic sign analysis system to detect traffic signboards in highways and streets",
+    },
+    {
         title: "Personality Type Detection",
-        description: "An user input Classification of the person based on the Myer-Briggs personality type using NLTK toolkits to preprocess the given text data and XGbooster,KNN to classify the perosnality"
+        description: "An user input Classification of the person based on the Myer-Briggs personality type using NLTK toolkits to preprocess the given text data and XGbooster,KNN to classify the personality",
     },
     {
         title: "Smart Waste Management for commercial buildings",
-        description: "Developed an IoT-based waste management system for efficient monitoring and segregation of waste, utilizing sensors and data analysis for optimized resource allocation andenvironmental sustainability..",
+        description: "Developed an IoT-based waste management system for efficient monitoring and segregation of waste, utilizing sensors and data analysis for optimized resource allocation and environmental sustainability..",
     },
     {
         title: "AI based Chatbot",
@@ -18,11 +22,10 @@ const projects = [{
         description: "Implemented a movie recommendation system using scikit-learn library, utilizing collaborative filtering techniques to suggest movies to users based on their historical preferences and similarity with other users, improving movie discovery and user engagement...",
     },
     {
-        title: "Computer vision with arduino",
-        description: "Developed a gesture-controlled system using Arduino,integrating servo motor and LED, allowing intuitive control of devices based on hand movements, enhancing interactivity anduser experience.",
+        title: "Computer vision with Arduino",
+        description: "Developed a gesture-controlled system using Arduino, integrating servo motor and LED, allowing intuitive control of devices based on hand movements, enhancing interactivity and user experience.",
     },
 ];
-
 
 const Project = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,23 +45,29 @@ const Project = () => {
         div className = "project-slider" >
         <
         button className = "arrow-button"
-        onClick = { handleClickLeft } > < FaArrowLeft / > < /button> <
+        onClick = { handleClickLeft } >
+        <
+        FaArrowLeft / >
+        <
+        /button> <
         div className = "project-card-container" > {
             projects.slice(currentIndex, currentIndex + 3).map((project, index) => ( <
                 div className = "project-card"
                 key = { index } >
                 <
                 h3 > { project.title } < /h3> <
-                p > { project.description } < /p> <
-                /div>
+                p > { project.description } < /p> < /
+                div >
             ))
         } <
         /div> <
         button className = "arrow-button"
-        onClick = { handleClickRight } > < FaArrowRight / > < /button> <
-        /div>
-
+        onClick = { handleClickRight } >
         <
+        FaArrowRight / >
+        <
+        /button> < /
+        div > <
         /div>
     );
 };
