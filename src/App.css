@@ -214,10 +214,10 @@ body {
 
 .experience-card {
     flex: 0 0 calc(80% / 2);
-    /* Adjust the width for three cards */
+    /* Allow flexibility to grow */
     max-width: calc(80% / 2);
-    /* Adjust the width for three cards */
-    height: 100%;
+    /* Maximum width for two cards */
+    height: 80%;
     background-color: #f0f0f0;
     padding: 20px;
     margin: 0 10px;
@@ -225,8 +225,8 @@ body {
     margin-right: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     color: #333;
+    overflow-wrap: break-word;
     /* Add word wrap for the project description */
-    overflow-wrap: break-word
 }
 
 .experience-card:hover {
@@ -607,7 +607,9 @@ button:hover {
     }
 }
 
+
 /* LoadingPage.css */
+
 .loading-container {
     display: flex;
     flex-direction: column;
@@ -615,31 +617,32 @@ button:hover {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
-  }
-  
-  .spinner-icon {
+}
+
+.spinner-icon {
     font-size: 40px;
     color: #333;
     animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  h2 {
+}
+
+h2 {
     margin-top: 10px;
     font-size: 20px;
     color: #555;
-  }
-  
-  /* Responsive styles for LoadingPage */
-  @media screen and (max-width: 768px) {
+}
+
+
+/* Responsive styles for LoadingPage */
+
+@media screen and (max-width: 768px) {
     .loading-container {
-      padding-top: 40vh;
-      height: 60vh;
+        padding-top: 40vh;
+        height: 60vh;
     }
-  }
-  
+}
